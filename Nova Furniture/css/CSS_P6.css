@@ -1,0 +1,121 @@
+/*хедер*/
+header{
+    background-image:  url("../images/page_6.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 20% 75%;
+}
+
+
+/*картинка и боковой текст*/
+h1{
+    font-family: 'Cormorant SC', serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 0.5px solid #333;
+    border-top: 0.5px solid #333;
+    box-shadow: 0 0 5px 2px #e6cb31;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.righttext, .leftpic{
+    max-width: 600px;
+    margin: 0px 10px;
+}
+
+.righttext{
+    text-align: justify;    
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+p{
+    margin-bottom: 0.5em;
+}
+
+
+
+/* Формы для заполнения*/
+form{
+    border: 1px solid #333;
+    border-radius: 20px 30px;
+    background-color:#ffffff;
+    max-width: 1100px;
+    width: 100%;
+    margin: 10px auto;
+    padding:15px;
+    text-align: center;
+    }
+
+legend{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+input, select{
+    background-color: rgb(232, 241, 255);
+    border: 0.5px solid #333;
+    border-radius: 10px;
+    width: 60%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 60%;
+    background-color: rgb(232, 241, 255);
+    height: 200px;
+    resize: none;
+    border: 0.5px solid #333;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+   }
+
+input[type=radio] {
+    height: 1em;
+    width: 2%;
+    position: relative;
+}
+
+.rad{
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+}
+
+
+
+/*Кнопка отправить*/
+.send1{
+    margin: 10px auto;
+    padding:15px;
+    text-align: center;
+    
+}
+.send2{
+    width: 200px;
+    font-weight: 600;
+}
+
+input[type=submit]{
+    background-color: #f1df7b;
+}
+
+
+

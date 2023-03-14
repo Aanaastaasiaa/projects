@@ -1,0 +1,81 @@
+.mainheader{
+    height: 120px;
+    position: relative;
+}
+
+/*Видео на бэкграунде*/
+main{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+
+.video{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/*Надписи над видео*/
+.overlay{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 35%;
+    z-index: 1;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center; 
+}
+
+#intro_title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+
+#intro_title2{
+    font-family: 'El Messiri', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 7px;
+    margin-bottom: 3px;
+}
+
+#intro_title3{
+    font-family: 'El Messiri', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+
+
+/*Кнопка после надписей*/
+.button{
+    position: absolute;
+    top: 63%;
+    width: 100%;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 15px;
+    border: 3px solid #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/*Все про футер*/
+.footer {
+    bottom: -21.7vmax;
+}

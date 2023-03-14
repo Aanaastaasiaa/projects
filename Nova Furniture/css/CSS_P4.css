@@ -1,0 +1,83 @@
+header{
+    background-image:  url("../images/page_4.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20% 65%;
+}
+
+
+/*Описание раздела сайта*/
+.catalog_description{
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.h1_{
+    width: 600px;
+    font-size: 30px;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.h1_descr{
+    width: 700px;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+/*Каталог с фотографиями*/
+.catalog_main{
+    margin: 60px auto;
+    max-width: 1400px;
+    width: 100%;
+}
+.fline, .sline, .tline{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection{
+    position: relative;
+    max-width: 450px;
+    height: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_description{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    margin-top: 17vh;
+    font-size: 5vh;
+    font-family: 'El Messiri', serif;
+    font-weight: 500;
+    text-shadow:0 0 20px #282727;
+    text-align: center; 
+}
+
+.collection:hover .img_description{
+    visibility: visible;
+    opacity: 1;
+}

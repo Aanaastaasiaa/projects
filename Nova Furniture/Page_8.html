@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/CSS_P8.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>NOVA furniture | Вход</title>
+</head>
+<body>
+  <div class="home">
+    <a class="home-link" href="Page_1.html">
+    <img id="home-img" src="images/home.png" alt="Домой"></a> 
+  </div>
+
+    <div class="backgr">
+      <video class="video" loop="loop" autoplay="" muted="" playsinline>
+      <source src="images/mebelvid1.mp4" type="video/mp4"/>
+    </div>
+
+    <div class="container">
+      <div class="backbox">
+        <div class="loginMsg">
+          <div class="textcontent">
+            <p class="title">Не имеете зарегистрированного аккаунта?</p>
+            <p>Зарегистрируйтесь, чтобы пользоваться всеми преимуществами участника.</p>
+            <button id="switch1">Регистрация</button>
+          </div>
+        </div>
+        <div class="signupMsg visibility">
+          <div class="textcontent">
+            <p class="title">Аккаунт уже есть?</p>
+            <p>Войдите для пользования всеми сервисами.</p>
+            <button id="switch2">Войти</button>
+          </div>
+        </div>
+      </div>
+      <!-- backbox -->
+  
+      <div class="frontbox">
+        <div class="login">
+          <h2>Вход</h2>
+          <div class="inputbox">
+            <input type="text" name="email" placeholder="  Электронная почта">
+            <input type="password" name="password" placeholder="  Пароль">
+          </div>
+          <p>Забыли пароль?</p>
+          <button>Войти</button>
+        </div>
+  
+        <div class="signup hide">
+          <h2>Регистрация</h2>
+          <div class="inputbox">
+            <input type="text" name="fullname" placeholder="  ФИО">
+            <input type="text" name="email" placeholder="  Электронная почта">
+            <input type="password" name="password" placeholder="  Пароль">
+          </div>
+          <button>Регистрация</button>
+        </div>
+  
+      </div>
+    </div>
+  </body>
+
+<script src="./js/jquery-3.6.3.min.js"></script>
+<script src="./js/login.js"></script>
+
+</html>

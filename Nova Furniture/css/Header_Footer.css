@@ -1,0 +1,300 @@
+/*хедер и оформление контейнеров*/
+header{
+    height: 400px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+
+.header1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*конец хедера и оформления контейнеров*/
+
+/*логотип и телефон в хедере*/
+.logo{
+    position: relative;
+}
+
+.logotext {
+    margin-top: 10px;
+    margin-left: 60px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.logotext2{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+a{
+    color:rgb(255, 255, 255);
+}
+
+.tel{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: 1s;
+}
+/*конец логотипа и телефона в хедере*/
+
+/*меню в хедере*/
+.menu-container{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 550;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+/*кнопка скрытое меню в хедере*/
+.adapt_btn {
+    display: none;
+    position: relative;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.adapt_btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.adapt_btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.adapt_btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.open .adapt_btn span {
+    background-color: white;
+}
+
+.header.open .adapt_btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .adapt_btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .adapt_btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+/*конец дизайна кнопки*/
+
+/*кнопка личный кабинет*/
+#lk{
+    width: 40px;
+    height: 40px;
+    margin-top: -8px;
+    margin-left: 8px;
+    transition: 1s;
+}
+
+/*увеличение масштаба при навеедние на лк и на телефон*/
+#lk:hover, .tel:hover {
+    transform: scale(1.2);
+}
+
+
+/*появление полоски под текстом в основном меню*/
+.cont-link{
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    text-decoration:none;
+    display: inline-block;
+}
+.cont-link:after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: #ffffff;
+    transition: width 0.4s ease-in-out;
+}
+.cont-link:hover:after, .cont-link:focus:after {
+    width: 100%;
+}
+.cont-link:hover{
+    color: #ffffff;
+    font-weight: 600;
+}
+/*конец появления полоски*/
+
+
+/*Выпадающее меню при наведении на пункт в гл меню "Каталог"*/
+.hidden{
+    display: inline-block;
+    list-style: none;
+}
+
+.hiddenmenu{
+    display: inline-block;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    margin-top: 7px;
+    margin-left: -20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    position: absolute;
+    display: none;
+    font-size: 15px;
+    font-weight: 500;
+    offset: -10px;
+}
+
+.hiddenmenu a{
+    padding: 10px 0px;
+    display: block;
+    color: #000000;
+    text-shadow: none;;
+    width: 160px;
+    text-align: center;
+}
+
+.hiddenmenu a:hover {
+    color:  #f0d539;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+
+.hiddenmenu.active {
+    display:block;
+}
+/*Конец оформления выпадающего меню*/
+
+/*все про футер*/
+.footer {
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%; 
+    background: #333;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.social-icon,  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+  
+.social-icon__item, .menu__item {
+    list-style: none;
+}
+  
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+  
+.menu__link {
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+  
+.menu__link:hover {
+    opacity: 1;
+}
+  
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+    .adapt_btn {
+        display: block;
+    }
+    .menu-container {
+        position: absolute;
+        z-index: 1;
+        display: none;
+        right: -340px;
+        top: -50px;
+        width: 340px;
+        height: 100vh;
+        background-color: #7b7979;
+        padding: 90px 20px 20px 20px;
+        transition: transform .5s;
+    }
+    .hiddenmenu a{
+        display: none;
+        opacity: 0;
+    }
+    .main-menu {
+        display: block;
+        text-align: center;
+    }
+    .cont-link {
+        color: white;
+        font-size: 21px;
+        padding: 15px 0;
+    }
+
+    .hidden, #lk {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .header.open .menu-container {
+        transform: translateX(-100%);
+        display: block;
+    }
+}
